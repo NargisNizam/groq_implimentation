@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nova AI - RAG Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-icon">✦</div>
+
+            <div>
+                <h2>Nova AI</h2>
+                <span>RAG Assistant</span>
+            </div>
+        </div>
+
+
+        <button class="new-chat" id="newChatBtn">
+            <span>＋</span>
+            New conversation
+        </button>
+
+
+        <div class="sidebar-section">
+
+            <p class="section-title">Your Assistant</p>
+
+            <div class="feature active">
+                <span>◈</span>
+                <div>
+                    <strong>Knowledge Chat</strong>
+                    <small>Ask from your documents</small>
+                </div>
+            </div>
+
+            <div class="feature">
+                <span>✧</span>
+                <div>
+                    <strong>Groq AI</strong>
+                    <small>Fast AI responses</small>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="connection">
+                <span class="online-dot"></span>
+
+                <div>
+                    <strong>System online</strong>
+                    <small>Groq API connected</small>
+                </div>
+            </div>
+
+            <div class="powered">
+                Powered by <b>Groq</b>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- Main -->
+    <main class="main">
+
+        <!-- Top bar -->
+        <header class="topbar">
+
+            <div class="mobile-brand">
+                <div class="brand-icon">✦</div>
+                <strong>Nova AI</strong>
+            </div>
+
+            <div class="model-info">
+
+                <div class="model-icon">AI</div>
+
+                <div>
+                    <strong>Knowledge Assistant</strong>
+                    <span>RAG • Online</span>
+                </div>
+
+            </div>
+
+            <button class="clear-btn" id="clearBtn">
+                Clear chat
+            </button>
+
+        </header>
+
+
+        <!-- Chat -->
+        <section class="chat-area" id="chatContainer">
+
+
+            <!-- Welcome -->
+            <div class="welcome" id="welcome">
+
+                <div class="welcome-icon">
+                    ✦
+                </div>
+
+                <h1>
+                    How can I help you?
+                </h1>
+
+                <p>
+                    Ask a question and I'll find the answer
+                    from your knowledge document.
+                </p>
+
+
+                <div class="suggestions">
+
+                    <button class="suggestion">
+                        What is LLM?
+                    </button>
+
+                    <button class="suggestion">
+                        Explain RAG
+                    </button>
+
+                    <button class="suggestion">
+                        What is AI?
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Messages will appear here -->
+
+        </section>
+
+
+        <!-- Typing -->
+        <div class="typing" id="typing">
+
+            <div class="typing-avatar">
+                ✦
+            </div>
+
+            <div class="typing-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <span>Nova is thinking...</span>
+
+        </div>
+
+
+        <!-- Input -->
+        <div class="input-wrapper">
+
+            <div class="input-box">
+
+                <textarea
+                    id="userInput"
+                    rows="1"
+                    placeholder="Ask anything about your knowledge base..."
+                ></textarea>
+
+                <button id="sendButton" class="send-btn">
+
+                    <span>➤</span>
+
+                </button>
+
+            </div>
+
+            <p class="input-note">
+                Nova AI can answer using information from your knowledge document.
+            </p>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

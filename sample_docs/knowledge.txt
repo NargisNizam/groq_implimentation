@@ -1,0 +1,39 @@
+# Acme Design Studio — Company Handbook
+
+## Remote Work Policy
+All designers may work remotely up to 3 days per week. Core collaboration hours are 10:00 AM to 3:00 PM in your local timezone. You must be available on Slack during these hours.
+
+## Design System
+Acme uses the "Nebula" design system. Primary brand color is #4F46E5 (indigo). Secondary accent is #06B6D4 (cyan). All UI components must use Nebula tokens — do not use hard-coded hex values in production code.
+
+## Time Off
+Full-time employees receive 20 days of paid time off (PTO) per year. PTO requests must be submitted at least 2 weeks in advance through the HR portal. Unused PTO does not roll over to the next year.
+
+## Expense Policy
+Design tools and software subscriptions under $50/month can be expensed without pre-approval. Purchases over $50 require manager approval. Annual conference budget is $1,500 per employee.
+
+## Client Communication
+All client-facing deliverables must be reviewed by a senior designer before delivery. Use the shared Figma review workflow. Never share work-in-progress files directly with clients.
+
+# Acme Design Studio — Product FAQ
+
+## What is Nebula UI?
+Nebula UI is Acme's component library built on React and Tailwind CSS. It includes 80+ components: buttons, forms, modals, data tables, and navigation patterns. Version 3.2 is the current stable release.
+
+## How do I access the Figma library?
+Open Figma → Team Libraries → search "Nebula Design System". Click "Add to file". You need an Acme Figma seat to access it. Contact IT if you don't see the library.
+
+## What are the brand fonts?
+Headings use "Inter" (weight 600–700). Body text uses "Inter" (weight 400). Code snippets use "JetBrains Mono". All fonts are available via Google Fonts or the internal font server.
+
+## How do I submit a design review?
+1. Move your Figma file to the "Ready for Review" project folder.
+2. Tag @design-leads in the #design-reviews Slack channel.
+3. Include a Loom walkthrough link if the flow has more than 3 screens.
+4. Reviews are completed within 2 business days.
+
+## Prototyping tools
+Acme supports Figma (primary), ProtoPie (advanced interactions), and Principle (motion studies). Lottie files should be exported at 60fps for web and 30fps for mobile.
+
+## Accessibility standards
+All designs must meet WCAG 2.1 AA. Minimum contrast ratio is 4.5:1 for normal text and 3:1 for large text. Every interactive element needs a visible focus state.
